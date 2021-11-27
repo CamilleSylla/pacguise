@@ -1,0 +1,43 @@
+.wrapper {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: var(--secondary);
+    .infos {
+        width: 100%;
+        height: 25%;
+        background: var(--primary);
+    }
+    .links {
+        height: 75%;
+        width: 100%;
+        position: relative;
+        ul  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 50%;
+            top: 50%;
+            right: 0;
+            transform: translate3d(0, -50%, 0);
+            list-style: none;
+            li {
+                font-weight: bold;
+                color: var(--white);
+                font-size: 13px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }           
+        }
+    }
+    img {
+        position: absolute;
+        left: 20%;
+        top: 1vh;
+        height: 20vh;
+    }
+}

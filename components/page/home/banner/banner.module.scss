@@ -1,0 +1,64 @@
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: var(--primary);
+        opacity: .8;
+    }
+}
+
+.title {
+    width: 100%;
+    color: var(--white);
+    z-index: 3;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    h1 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    h2 {
+        font-size: 5rem;
+        font-weight: 300;
+        span {
+            font-weight: 900;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+    }
+    p {
+        padding-top: 1.5vh;
+        padding-bottom: 4vh;
+        font-size: 2rem;
+    }
+    .card {
+        display: flex;
+        h1 {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        p {
+            padding: 0;
+            width: 80%;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}

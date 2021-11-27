@@ -1,0 +1,64 @@
+.wrapper {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    height: 50%;
+    width: 100%;
+    background: url('/assets/img/team.jpg');
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    .blur {
+        width: 100%;
+        height: 100%;
+        background: rgba(#1e1d3f,.9);
+        .title {
+            height: 30vh;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--white);
+            h1 {
+                font-weight: 300;
+                padding-bottom: 2vh;
+                text-transform: uppercase;
+                span {
+                    font-weight: 900;
+                    color: var(--secondary);
+                }
+            }
+        }
+        .slide {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .playerCard {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: var(--white);
+                cursor: pointer;
+                &:hover {
+                    img {
+                        filter: grayscale(0);
+                    }
+                }
+                img {
+                    transition: all ease .5s;
+                    width: 13vh;
+                    height: 13vh;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    filter: grayscale(100%);
+                }
+                h1 {
+                    margin-top: 2vh;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        
+    }
+}
